@@ -5,7 +5,7 @@ import { Footer } from './componets/Footer/Footer';
 
 function App() {
 	return (
-		<div className="App">
+		<div>
 			<header>
 				<title>REM Waste</title>
 			</header>

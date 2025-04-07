@@ -24,7 +24,7 @@ export const StyledCard = styled.div<StyledCardProps>`
 
 export const StyledImageContainer = styled.div`
 	width: 100%;
-	min-width: 400px;
+	min-width: 300px;
 	height: auto;
 	min-height: 200px;
 	border-radius: 5px;

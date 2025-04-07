@@ -16,10 +16,6 @@ export const SkipSelectPage: React.FC<SkipSelectPageProps> = ({ cards }) => {
 		setIsActive(true);
 	};
 
-	const handleButtonClick = () => {
-		console.log('Button clicked!');
-	};
-
 	return (
 		<StyledContainer>
 			<StyledContent>
@@ -34,7 +30,6 @@ export const SkipSelectPage: React.FC<SkipSelectPageProps> = ({ cards }) => {
 						size={card?.size}
 						hire_period_days={card?.hire_period_days}
 						price_before_vat={card?.price_before_vat}
-						handleButtonClick={handleButtonClick}
 						handleCardClick={() => handleCardClick(card)}
 						borderColor={borderColor}
 						selectedCard={selectedCard?.size === card.size}
