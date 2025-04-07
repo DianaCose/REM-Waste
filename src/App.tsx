@@ -1,6 +1,7 @@
 import React from 'react';
 import { data } from './data';
 import { SkipSelectPage } from './pages/SkipSelectPage';
+import { Footer } from './componets/Footer/Footer';
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 			</header>
 			<main>
 				<SkipSelectPage cards={data} />
+				<Footer />
 			</main>
 		</div>
 	);
