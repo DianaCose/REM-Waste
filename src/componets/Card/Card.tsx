@@ -30,7 +30,7 @@ export const Card: React.FC<CardProps> = (props) => {
 				<StyledCardDescription>per week</StyledCardDescription>
 			</StyledPrice>
 			<StyledButton onClick={props.handleButtonClick}>
-				Select This Skip
+				{props.isActive && props.selectedCard ? 'Selected' : 'Select This Skip'}
 			</StyledButton>
 		</StyledCard>
 	);

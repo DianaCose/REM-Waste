@@ -21,6 +21,7 @@ export interface CardProps {
 	handleButtonClick?: () => void;
 	borderColor?: string;
 	selectedCard?: boolean;
+	isActive?: boolean;
 }
 
 export interface SkipSelectPageProps {

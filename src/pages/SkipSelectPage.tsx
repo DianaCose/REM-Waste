@@ -7,12 +7,13 @@ export const SkipSelectPage: React.FC<SkipSelectPageProps> = ({ cards }) => {
 	const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
 	const [borderColor, setBorderColor] = useState('transparent');
 	const [buttonText, setButtonText] = useState('Select This Skip');
-	const [showButton, setShowButton] = useState(true);
+	const [isActive, setIsActive] = useState(false);
 
 	const handleCardClick = (card: CardProps) => {
 		setSelectedCard(card);
 		setBorderColor('blue');
 		setButtonText('Selected');
+		setIsActive(true);
 	};
 
 	const handleButtonClick = () => {
@@ -37,6 +38,7 @@ export const SkipSelectPage: React.FC<SkipSelectPageProps> = ({ cards }) => {
 						handleCardClick={() => handleCardClick(card)}
 						borderColor={borderColor}
 						selectedCard={selectedCard?.size === card.size}
+						isActive={isActive}
 					/>
 				);
 			})}
